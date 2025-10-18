@@ -30,7 +30,8 @@ and works as though the entire list is rendered.
 
 ```
 
-The following attributes are applied to the scrollable viewport that contains the list:
+The following attributes are applied to the scrollable viewport that contains
+the list. The overflow attribute is particularly important!
 
 ```haskell
 
@@ -80,7 +81,8 @@ These miscellaneous attributes are used for table and cell rendering:
 
 ```
 
-Our lazy list configuration requires knowledge of the row height and total number of elements we plan on rendering.
+Our lazy list configuration requires knowledge of the row height and total
+number of elements we plan on rendering.
 
 ```haskell
 
