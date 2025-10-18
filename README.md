@@ -3,6 +3,9 @@ reflex-dom-lazy
 
 Because sometimes you don't want to render all your data at once.
 
+Usage
+-----
+
 Below is an example of a table with a large number of elements. Using
 `Reflex.Dom.Lazy.List` we can render only the relevant window of visible
 elements instead of trying to render the entire table. The lazy list widget
@@ -132,3 +135,27 @@ This example uses [`Reflex.Dom.Tables.tableDyn`](https://github.com/reflex-frp/r
 >    pure ()
 
 ```
+
+Hacking
+-------
+
+To work on this library, enter the nix shell with the following command:
+
+```bash
+nix-shell -A project.haskell-nix
+```
+
+Once you're inside that shell, you can use `cabal repl` for quick feedback
+while developing. To build and test your changes, run:
+
+```bash
+javascript-unknown-ghcjs-cabal build
+```
+
+You'll see some output like this:
+
+```
+dist-newstyle/build/javascript-ghcjs/ghc-9.12.2/reflex-dom-lazy-0.1.0.0/x/reflex-dom-lazy/build/reflex-dom-lazy/reflex-dom-lazy.jsexe
+```
+
+Open `index.html` at that path to run the code from `Readme.lhs` in your browser.
